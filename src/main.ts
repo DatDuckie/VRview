@@ -65,16 +65,20 @@ const updateStage = () => {
   preview.style.backgroundImage = ''
   preview.querySelector('.media-preview')?.remove()
   const mediaUrl = item.url ?? item.path
-  if (item.kind === 'image' || item.kind === 'movie') {
-    const media = document.createElement(item.kind === 'image' ? 'img' : 'video')
+  if (item.kind === 'image') {
+    const media = document.createElement('img')
     media.className = 'media-preview'
     media.src = mediaUrl
     media.setAttribute('aria-label', item.name)
-    if (item.kind === 'movie') {
-      media.controls = true
-      media.muted = true
-      media.loop = true
-    }
+    preview.prepend(media)
+  } else if (item.kind === 'movie') {
+    const media = document.createElement('video')
+    media.className = 'media-preview'
+    media.src = mediaUrl
+    media.setAttribute('aria-label', item.name)
+    media.controls = true
+    media.muted = true
+    media.loop = true
     preview.prepend(media)
   }
 }
