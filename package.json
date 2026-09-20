@@ -1,0 +1,20 @@
+{
+  "name": "vr-shelf",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "@types/node": "^22.10.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
+  }
+}
