@@ -23,4 +23,11 @@ The browser upload control creates a temporary local preview. Browsers cannot wr
 
 ## VR controls
 
-The WebXR scene exposes controller rays. Point and press the controller select button to rotate the room ring; the shelf is intentionally presented as a forward-facing TV panel rather than a full surround environment.
+The VR shelf is designed around an Xbox-style controller:
+
+- **LB / RB** browse backward and forward through the shelf.
+- **Left / right D-pad** switch between Room, Theatre, and 360 modes.
+- **A** opens the selected item.
+- **B** closes the item and returns to the shelf.
+
+The shelf stays visible in Room and Theatre mode, while 360 mode surrounds the viewer with the spatial environment. The selected item and current mode are synchronized with the desktop preview before entering VR.
